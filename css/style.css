@@ -388,7 +388,7 @@ footer{background:var(--ink);padding:60px 80px 26px}
 .ftb{font-size:9.5px;color:rgba(255,255,255,0.15);letter-spacing:1.5px;text-transform:uppercase}
 
 /* RESPONSIVE */
-@media(max-width:1200px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1200px){.pgrid{grid-template-columns:repeat(3,1fr) !important}}
 @media(max-width:960px){
   nav{padding:0 18px}.nlinks{display:none}.nhbtn{display:flex}
   .sec,.rangesec,.prodsec,.whysec,.procsec,.revsec,.cta,.contactsec{padding:60px 22px}
@@ -402,7 +402,7 @@ footer{background:var(--ink);padding:60px 80px 26px}
   .rt:nth-child(4){grid-column:1/2;grid-row:3}
   .rt:nth-child(5){grid-column:2/3;grid-row:3}
   .rt:nth-child(6){display:none}
-  .pgrid{grid-template-columns:repeat(2,1fr)}
+  .pgrid{grid-template-columns:repeat(2,1fr) !important}
   .whygrid{grid-template-columns:1fr;gap:44px}
   .wmosaic{grid-template-rows:210px 160px}
   .wfll{left:8px;bottom:36px}.wflr{right:8px;top:32px}
@@ -418,7 +418,7 @@ footer{background:var(--ink);padding:60px 80px 26px}
   .cdots{left:22px}
 }
 @media(max-width:600px){
-  .pgrid{grid-template-columns:1fr}
+  .pgrid{grid-template-columns:1fr !important}
   .frow{grid-template-columns:1fr}
   .feats{grid-template-columns:1fr}
   .ftgrid{grid-template-columns:1fr}
