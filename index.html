@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'/>
+<title>Shri Vaishno Enterprises &ndash; Paper Plate &amp; Dona Machine Manufacturer, Delhi</title>
+<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'/>
+<link rel='stylesheet' href='css/style.css'/>
+</head>
+<body>
+
+<nav id='topnav'>
+  <a href='#' class='nbrand'>
+    <div class='nlogo'>SVE</div>
+    <div class='nname'><strong>Shri Vaishno Enterprises</strong><span>Est. 2006 &middot; New Delhi</span></div>
+  </a>
+  <ul class='nlinks'>
+    <li><a href='#categories'>Products</a></li>
+    <li><a href='#about'>About Us</a></li>
+    <li><a href='#process'>Process</a></li>
+    <li><a href='#reviews'>Reviews</a></li>
+    <li><a href='#contact' class='ncta'>Get a Quote</a></li>
+  </ul>
+  <button id='nhbtn' class='nhbtn' aria-label='Open menu'><span></span><span></span><span></span></button>
+</nav>
+
+<div id='mnavOverlay' class='mnav-overlay'></div>
+<aside id='mnav' class='mnav'>
+  <div class='mnav-top'>
+    <div class='mnav-brand'></div>
+    <button id='mnavClose' class='mnav-close' aria-label='Close menu'>&times;</button>
+  </div>
+  <ul id='mnavLinks' class='mnav-links'></ul>
+  <div class='mnav-foot'>Est. 2006 &middot; New Delhi</div>
+</aside>
+<script>
+(function(){
+  var topnav=document.getElementById('topnav');
+  var hbtn=document.getElementById('nhbtn');
+  var overlay=document.getElementById('mnavOverlay');
+  var mnav=document.getElementById('mnav');
+  var closeBtn=document.getElementById('mnavClose');
+  var linksList=document.getElementById('mnavLinks');
+  var brandBox=mnav.querySelector('.mnav-brand');
+  var brandSrc=topnav.querySelector('.nbrand');
+  if(brandSrc){brandBox.innerHTML=brandSrc.innerHTML;}
+  var srcLinks=topnav.querySelectorAll('.nlinks > li');
+  for(var i=0;i<srcLinks.length;i++){
+    var a=srcLinks[i].querySelector('a');
+    var li=document.createElement('li');
+    var ac=document.createElement('a');
+    ac.href=a.getAttribute('href');
+    ac.textContent=a.textContent;
+    if(a.classList.contains('ncta')){ac.className='mnav-cta';}
+    li.appendChild(ac);
+    linksList.appendChild(li);
+  }
+  function openNav(){document.body.classList.add('mnav-open');}
+  function closeNav(){document.body.classList.remove('mnav-open');}
+  hbtn.addEventListener('click',openNav);
+  closeBtn.addEventListener('click',closeNav);
+  overlay.addEventListener('click',closeNav);
+  linksList.addEventListener('click',function(e){if(e.target.tagName==='A'){closeNav();}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeNav();}});
+})();
+</script>
+
+
+<div class='hero'>
+  <div class='cwrap' id='cw'>
+    <div class='slide on'><div class='sbg' style="background-image:url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1800&q=85&fit=crop')"></div><div class='sov'></div><div class='sct'><div class='stag'><span class='stagdot'></span><span class='staglbl'>Bestselling Machine</span></div><h1 class='sh1'>Fully Automatic<br><em>Paper Plate</em><br>Making Machine</h1><p class='sdesc'>High-output double die press &mdash; 5,000 plates per hour. Engineered for reliability, built in Delhi since 2006.</p><div class='spr'><span class='sfrom'>Starting from</span><span class='samt'>&#8377;25,000</span><span class='sunit'>/ piece</span></div><div class='sbtns'><a href='#contact' class='btnink'>Enquire Now</a><a href='#categories' class='btnout'>Explore Range</a></div></div></div>
+    <div class='slide'><div class='sbg' style="background-image:url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1800&q=85&fit=crop')"></div><div class='sov'></div><div class='sct'><div class='stag'><span class='stagdot'></span><span class='staglbl'>Hydraulic Series</span></div><h1 class='sh1'>Hydraulic Double Die<br><em>All-in-One</em><br>Machine</h1><p class='sdesc'>Maximum output with minimum effort. Fully automated hydraulic pressing for serious manufacturers.</p><div class='spr'><span class='sfrom'>Starting from</span><span class='samt'>&#8377;85,000</span><span class='sunit'>/ piece</span></div><div class='sbtns'><a href='#contact' class='btnink'>Enquire Now</a><a href='#categories' class='btnout'>See All Models</a></div></div></div>
+    <div class='slide'><div class='sbg' style="background-image:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1800&q=85&fit=crop')"></div><div class='sov'></div><div class='sct'><div class='stag'><span class='stagdot'></span><span class='staglbl'>Precision Cutting</span></div><h1 class='sh1'>Roll to Sheet<br><em>Cutting</em><br>Machine</h1><p class='sdesc'>Consistent reel-to-sheet precision. Adjustable width, mild steel construction, compatible with all lines.</p><div class='spr'><span class='sfrom'>Starting from</span><span class='samt'>&#8377;1,00,000</span><span class='sunit'>/ piece</span></div><div class='sbtns'><a href='#contact' class='btnink'>Get a Quote</a><a href='#categories' class='btnout'>View Specs</a></div></div></div>
+    <div class='slide'><div class='sbg' style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1800&q=85&fit=crop')"></div><div class='sov'></div><div class='sct'><div class='stag'><span class='stagdot'></span><span class='staglbl'>Premium Finish</span></div><h1 class='sh1'>Paper Plate<br><em>Lamination</em><br>Machine</h1><p class='sdesc'>Apply a waterproof premium finish. Fully automatic with adjustable speed &mdash; built for large-scale output.</p><div class='spr'><span class='sfrom'>Starting from</span><span class='samt'>&#8377;1,10,000</span><span class='sunit'>/ piece</span></div><div class='sbtns'><a href='#contact' class='btnink'>Request Demo</a><a href='#categories' class='btnout'>Learn More</a></div></div></div>
+  </div>
+  <div class='hstrip' id='hstrip'>
+    <div class='hth on' data-i='0' style="background-image:url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&q=70')"></div>
+    <div class='hth' data-i='1' style="background-image:url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=200&q=70')"></div>
+    <div class='hth' data-i='2' style="background-image:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=200&q=70')"></div>
+    <div class='hth' data-i='3' style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&q=70')"></div>
+  </div>
+  <button class='carr prev' id='cprev'>&#8592;</button>
+  <button class='carr nxt' id='cnxt'>&#8594;</button>
+  <div class='cdots' id='cdots'><div class='cdot on' data-i='0'></div><div class='cdot' data-i='1'></div><div class='cdot' data-i='2'></div><div class='cdot' data-i='3'></div></div>
+  <div class='hprog'><div class='hpbar' id='hpbar'></div></div>
+</div>
+
+<div class='ticker'><div class='tinner'><span class='titem'><span class='tdot'></span>18+ Years of Manufacturing Excellence</span><span class='titem'><span class='tdot'></span>500+ Machines Delivered Pan-India</span><span class='titem'><span class='tdot'></span>4.3&#9733; Rated &middot; 205 Verified Reviews</span><span class='titem'><span class='tdot'></span>ISO Quality Tested Before Dispatch</span><span class='titem'><span class='tdot'></span>Manufacturer &middot; Exporter &middot; New Delhi</span><span class='titem'><span class='tdot'></span>96% Response Rate &middot; +91 98990 57451</span><span class='titem'><span class='tdot'></span>18+ Years of Manufacturing Excellence</span><span class='titem'><span class='tdot'></span>500+ Machines Delivered Pan-India</span><span class='titem'><span class='tdot'></span>4.3&#9733; Rated &middot; 205 Verified Reviews</span><span class='titem'><span class='tdot'></span>ISO Quality Tested Before Dispatch</span><span class='titem'><span class='tdot'></span>Manufacturer &middot; Exporter &middot; New Delhi</span><span class='titem'><span class='tdot'></span>96% Response Rate &middot; +91 98990 57451</span></div></div>
+
+<div class='stats'><div class='scell'><div class='snum'>18<span class='splus'>+</span></div><div class='slbl'>Years in Business</div></div><div class='scell'><div class='snum'>500<span class='splus'>+</span></div><div class='slbl'>Machines Delivered</div></div><div class='scell'><div class='snum'>12<span class='splus'>+</span></div><div class='slbl'>Machine Models</div></div><div class='scell'><div class='snum'>205<span class='splus'>+</span></div><div class='slbl'>Happy Customers</div></div></div>
+
+<section class='rangesec' id='categories'>
+  <div class='rangehd'><div><div class='eyebrow'>Our Range</div><h2 class='sech'>Machine Categories</h2><p class='secp'>From &#8377;12,000 manual presses to &#8377;1,20,000 hydraulic lines &mdash; every budget, every scale.</p></div><a href='#products' class='rangelnk'>View All 12 Machines &rarr;</a></div>
+  <div class='rg'>
+    <div class='rt'><div class='rtimg' style="background-image:url('images/products/complete_setup.png')"></div><div class='rtvl'></div><div class='rtfeat'>&#9733; Featured</div><div class='rtbody'><div class='rtcat'>Most Popular</div><div class='rtname'>Paper Plate Machines</div><div class='rtmeta'>5 Products &middot; &#8377;12,000 &ndash; &#8377;90,000</div><div class='rtbtn'>Explore &rarr;</div></div></div>
+    <div class='rt'><div class='rtimg' style="background-image:url('images/products/full_setup.png')"></div><div class='rtvl'></div><div class='rtbody'><div class='rtcat'>Hydraulic Series</div><div class='rtname'>Hydraulic Machines</div><div class='rtmeta'>&#8377;70,000 &ndash; &#8377;1,20,000</div><div class='rtbtn'>Explore &rarr;</div></div></div>
+    <div class='rt'><div class='rtimg' style="background-image:url('images/products/roll-to-sheet-katting-machine.png')"></div><div class='rtvl'></div><div class='rtbody'><div class='rtcat'>Precision</div><div class='rtname'>Sheet Cutting Machines</div><div class='rtmeta'>&#8377;95,000 &ndash; &#8377;1,10,000</div><div class='rtbtn'>Explore &rarr;</div></div></div>
+    <div class='rt'><div class='rtimg' style="background-image:url('images/products/lamination-machine1.png')"></div><div class='rtvl'></div><div class='rtbody'><div class='rtcat'>Premium Finish</div><div class='rtname'>Lamination Machines</div><div class='rtmeta'>Fully automatic</div><div class='rtbtn'>Explore &rarr;</div></div></div>
+    <div class='rt'><div class='rtimg' style="background-image:url('images/products/Hydraulic\ Full\ Automatic\ Single\ Die\ Machine.png')"></div><div class='rtvl'></div><div class='rtbody'><div class='rtcat'>Eco-Friendly</div><div class='rtname'>Hydraulic single die all-in-one </div><div class='rtmeta'>&#8377;28,000 &ndash; &#8377;86,000</div><div class='rtbtn'>Explore &rarr;</div></div></div>
+    <div class='rt'><div class='rtimg' style="background-image:url('images/products/sleeper-making-machine.png')"></div><div class='rtvl'></div><div class='rtbody'><div class='rtcat'>Specialty</div><div class='rtname'>sleeper making Machines</div><div class='rtmeta'>Custom variants</div><div class='rtbtn'>Explore &rarr;</div></div></div>
+  </div>
+</section>
+
+<section class='prodsec' id='products'>
+  <div class='prodhd'><div><div class='eyebrow'>All Products</div><h2 class='sech' style='margin-bottom:5px'>Complete Machine Range</h2><p class='secp'>12 models &middot; &#8377;12,000 to &#8377;1,20,000 &middot; Quality-tested before dispatch.</p></div>
+  <div class='tabs' id='tabs'><button class='tab on' data-cat='all'>All (12)</button><button class='tab' data-cat='plate'>Plate Machines</button><button class='tab' data-cat='cutting'>Cutting</button><button class='tab' data-cat='special'>Special</button></div></div>
+  <div class='pgrid' id='pgrid'>
+<a href='products/double-die-full-automatic-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="plate"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/double-die-full-automatic1.png')"></div></div><div class="pbadge ">Popular</div></div><div class="pbody"><div class="pcat">Paper Plate Machine</div><div class="pname">Double Die Full Automatic Machine</div><div class="pspecs"><span class="pspec">Double Die</span><span class="pspec">Fully Auto</span><span class="pspec">Belt Drive</span></div><div class="pfoot"><div><span class="pprice">&#8377;48,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<a href='products/double-die-heavy-duty-automatic-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="plate"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/double-die-full-automatic-heavy-duty.png')"></div></div><div class="pbadge ">Heavy Duty</div></div><div class="pbody"><div class="pcat">Paper Plate Machine</div><div class="pname">Double Die Heavy Duty Automatic</div><div class="pspecs"><span class="pspec">Double Die</span><span class="pspec">Heavy Duty</span><span class="pspec">High Output</span></div><div class="pfoot"><div><span class="pprice">&#8377;55,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<a href='products/hydraulic-double-die-all-in-one-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="plate"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/hydraulic-double-die-full-automatic-machine.png')"></div></div><div class="pbadge ">Bestseller</div></div><div class="pbody"><div class="pcat">Hydraulic Machine</div><div class="pname">Hydraulic Double Die All-in-One</div><div class="pspecs"><span class="pspec">Hydraulic</span><span class="pspec">Double Die</span><span class="pspec">All-in-One</span></div><div class="pfoot"><div><span class="pprice">&#8377;85,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<a href='products/hydraulic-four-die-all-in-one-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="plate"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/hydraulic-four-die-all-in-one-machine.png')"></div></div><div class="pbadge gold">Premium</div></div><div class="pbody"><div class="pcat">Hydraulic Machine</div><div class="pname">Hydraulic Four Die All-in-One Machine</div><div class="pspecs"><span class="pspec">Hydraulic</span><span class="pspec">Four Die</span><span class="pspec">4x Output</span></div><div class="pfoot"><div><span class="pprice">&#8377;1,20,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<a href='products/hydraulic-single-die-all-in-one-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="plate"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/Hydraulic\ Full\ Automatic\ Single\ Die\ Machine.png')"></div></div></div><div class="pbody"><div class="pcat">Hydraulic Machine</div><div class="pname">Hydraulic Single Die All-in-One</div><div class="pspecs"><span class="pspec">Hydraulic</span><span class="pspec">Single Die</span><span class="pspec">All-in-One</span></div><div class="pfoot"><div><span class="pprice">&#8377;70,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<a href='products/single-die-full-automatic-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="plate"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/edited-photo\ \(1\).png')"></div></div></div><div class="pbody"><div class="pcat">Paper Plate Machine</div><div class="pname">Single Die Full Automatic Machine</div><div class="pspecs"><span class="pspec">Single Die</span><span class="pspec">Fully Auto</span><span class="pspec">Compact</span></div><div class="pfoot"><div><span class="pprice">&#8377;32,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<a href='products/single-die-full-automatic-heavy-duty.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="plate"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/automatic-single-die-paper-plate-making-machine.png')"></div></div></div><div class="pbody"><div class="pcat">Paper Plate Machine</div><div class="pname">Single Die Full Auto Heavy Duty</div><div class="pspecs"><span class="pspec">Single Die</span><span class="pspec">Heavy Duty</span><span class="pspec">Auto</span></div><div class="pfoot"><div><span class="pprice">&#8377;35,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<!-- <a href='products/automatic-single-die-paper-plate-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="plate"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/automatic-single-die-paper-plate-making-machine.png')"></div></div><div class="pbadge gold">Best Value</div></div><div class="pbody"><div class="pcat">Paper Plate Machine</div><div class="pname">Automatic Single Die Plate Machine</div><div class="pspecs"><span class="pspec">Single Die</span><span class="pspec">Auto</span><span class="pspec">Entry Level</span></div><div class="pfoot"><div><span class="pprice">&#8377;25,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a> -->
+<a href='products/manual-hand-press-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="plate"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/manual-hand-press.png')"></div></div><div class="pbadge ">Starter</div></div><div class="pbody"><div class="pcat">Hand Press</div><div class="pname">Manual Hand Press Machine</div><div class="pspecs"><span class="pspec">Manual</span><span class="pspec">No Power</span><span class="pspec">Portable</span></div><div class="pfoot"><div><span class="pprice">&#8377;12,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<a href='products/paper-plate-lamination-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="special"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/lamination-machine1.png')"></div></div><div class="pbadge gold">Premium</div></div><div class="pbody"><div class="pcat">Lamination Machine</div><div class="pname">Paper Plate Lamination Machine</div><div class="pspecs"><span class="pspec">Fully Auto</span><span class="pspec">High Output</span><span class="pspec">Premium Finish</span></div><div class="pfoot"><div><span class="pprice">&#8377;1,10,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<a href='products/roll-to-sheet-cutting-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="cutting"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/roll-to-sheet-katting-machine.png')"></div></div></div><div class="pbody"><div class="pcat">Sheet Cutting Machine</div><div class="pname">Roll to Sheet Cutting Machine</div><div class="pspecs"><span class="pspec">High Precision</span><span class="pspec">Adjustable</span><span class="pspec">Mild Steel</span></div><div class="pfoot"><div><span class="pprice">&#8377;1,00,000</span><span class="punit"> /pc</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+<a href='products/sleeper-making-machine.html' style='text-decoration:none;color:inherit;display:block'><div class="pcard" data-cat="special"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('images/products/sleeper-making-machine.png')"></div></div></div><div class="pbody"><div class="pcat">Specialty Machine</div><div class="pname">Sleeper Making Machine</div><div class="pspecs"><span class="pspec">Custom</span><span class="pspec">Made to Order</span><span class="pspec">Industrial</span></div><div class="pfoot"><div><span class="preq">Price on Request</span></div><button class="pbtn" onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Enquire</button></div></div></div></a>
+  </div>
+</section>
+
+<section class='whysec' id='about'>
+  <div class='whygrid'>
+    <div>
+      <div class='eyebrow'>Why Choose SVE</div>
+      <h2 class='sech'>Trusted by 500+<br>Entrepreneurs Across India</h2>
+      <p class='secp'>Since 2006, we have empowered hundreds of entrepreneurs to launch and scale manufacturing businesses from scratch.</p>
+      <div class='feats'>
+        <div class='feat'><div class='featic'>&#127981;</div><h4>In-House Manufacturing</h4><p>Every machine built at our Delhi plant using superior mild steel and precision-machined components.</p></div>
+        <div class='feat'><div class='featic'>&#9989;</div><h4>Pre-Delivery QC Testing</h4><p>Rigorous quality checks before every dispatch. Meets global performance standards from day one.</p></div>
+        <div class='feat'><div class='featic'>&#128295;</div><h4>After-Sales Support</h4><p>Installation guidance, operator training, and ongoing technical support throughout your journey.</p></div>
+        <div class='feat'><div class='featic'>&#128176;</div><h4>Every Budget &amp; Scale</h4><p>&#8377;12,000 hand-press to &#8377;1,20,000 hydraulic four-die &mdash; the right machine for your investment level.</p></div>
+        <div class='feat featcta' onclick="event.preventDefault();event.stopPropagation();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})"><div><h4>Ready to Get Started?</h4><p>Free consultation &amp; custom quote within 24 hrs.</p></div><div class='featarrow'>&rarr;</div></div>
+      </div>
+    </div>
+    <div style='position:relative'>
+      <div class='wmosaic'>
+        <div class='wph wa'><img src='images/gallery/why-1.jpg' alt='SVE Machine'/></div>
+        <div class='wph wb'><img src='images/gallery/why-2.jpg' alt='SVE Machine'/></div>
+        <div class='wph wc'><img src='images/gallery/why-3.jpg' alt='SVE Machine'/></div>
+      </div>
+      <div class='wfl wfll'><div class='wfnum'>18+</div><div class='wflbl'>Years of Excellence</div></div>
+      <div class='wfl wflr'><div class='wfnum'>500+</div><div class='wflbl'>Machines Delivered</div></div>
+    </div>
+  </div>
+</section>
+
+<section class='procsec' id='process'>
+  <div style='text-align:center'><div class='eyebrow' style='display:flex;justify-content:center'>How It Works</div><h2 class='sech' style='text-align:center'>From Enquiry to Your Factory Floor</h2><p class='secp' style='margin:0 auto;text-align:center'>Transparent and friction-free &mdash; from your first call to a running machine at your premises.</p></div>
+  <div class='procsteps'>
+    <div class='procstep'><div class='procn'>01</div><h4>Share Your Requirement</h4><p>Tell us your production target, budget &amp; space. We recommend the exact machine for your needs.</p></div>
+    <div class='procstep'><div class='procn'>02</div><h4>Receive Custom Quote</h4><p>Detailed quotation with specs, pricing, warranty and confirmed delivery timeline. No hidden costs.</p></div>
+    <div class='procstep'><div class='procn'>03</div><h4>Manufacturing &amp; QC</h4><p>Built at our Delhi plant. Rigorous pre-dispatch testing on every unit before it leaves our facility.</p></div>
+    <div class='procstep'><div class='procn'>04</div><h4>Delivery &amp; Commissioning</h4><p>Pan-India delivery with installation guidance and operator training &mdash; production starts day one.</p></div>
+  </div>
+</section>
+
+<section class='revsec' id='reviews'>
+  <div class='eyebrow'>Customer Reviews</div>
+  <h2 class='sech' style='margin-bottom:7px'>What Our Customers Say</h2>
+  <p class='secp' style='margin-bottom:44px'>Real feedback from entrepreneurs across India running SVE machines.</p>
+  <div class='revlayout'>
+    <div><div class='scorecard'><div class='scnum'>4.3</div><div class='scstars'><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span style='opacity:0.3'>&#9733;</span></div><div class='scbased'>Based on 205 verified reviews</div><div class='scbars'><div class='scbar'><span class='scbarlbl'>Quality</span><div class='scbartr'><div class='scbarfl' style='width:94%'></div></div><span class='scbarvl'>94%</span></div><div class='scbar'><span class='scbarlbl'>Response</span><div class='scbartr'><div class='scbarfl' style='width:96%'></div></div><span class='scbarvl'>96%</span></div><div class='scbar'><span class='scbarlbl'>Delivery</span><div class='scbartr'><div class='scbarfl' style='width:88%'></div></div><span class='scbarvl'>88%</span></div><div class='scbar'><span class='scbarlbl'>Value</span><div class='scbartr'><div class='scbarfl' style='width:91%'></div></div><span class='scbarvl'>91%</span></div></div></div></div>
+    <div class='revcards'>
+      <div class='rcard'><div class='rcardhd'><div class='rauth'><div class='rav'>B</div><div><div class='rname'>Brijesh Kumar</div><div class='rloc'>New Delhi, Delhi</div></div></div><div class='rstars'><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div></div><p class='rtext'>"Excellent machine quality. Runs smoothly, produces great output every day. Very happy with the after-sales support from the SVE team. Would strongly recommend."</p><span class='rprod'>Paper Dona Machine</span></div>
+      <div class='rcard'><div class='rcardhd'><div class='rauth'><div class='rav' style='background:#1a3520'>V</div><div><div class='rname'>Vishal Raut</div><div class='rloc'>Navi Mumbai, Maharashtra</div></div></div><div class='rstars'><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div></div><p class='rtext'>"Started with their single-die machine. Fantastic value and very durable &mdash; already upgrading to double-die. Professional and responsive team throughout."</p><span class='rprod'>Paper Dish Machine</span></div>
+      <div class='rcard'><div class='rcardhd'><div class='rauth'><div class='rav' style='background:#251535'>S</div><div><div class='rname'>Sudhkar</div><div class='rloc'>Bengaluru, Karnataka</div></div></div><div class='rstars'><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div></div><p class='rtext'>"On-time delivery and exactly as described. The hydraulic machine has been running for months without any issues. A reliable, trustworthy manufacturer."</p><span class='rprod'>Hydraulic Plate Machine</span></div>
+    </div>
+  </div>
+</section>
+
+<div class='cta'><div class='cta::before'></div><div class='ctain'><div><h2 class='ctah'>Ready to Launch Your<br><em>Manufacturing Business?</em></h2><p class='ctap'>Get a free consultation, product demo, and detailed quotation from India&rsquo;s trusted machine manufacturer. 18 years of expertise at your service.</p></div><div class='ctar'><a href='tel:+919899057451' class='ctaph'><span class='ctaphico'>&#128222;</span><div><div class='ctaphlbl'>Call or WhatsApp</div><div class='ctaphnum'>+91 98990 57451</div></div></a><a href='#contact' class='btnink' style='text-align:center;padding:13px 24px'>Send an Enquiry &rarr;</a></div></div></div>
+
+<section class='contactsec' id='contact'>
+  <div class='contactgrid'>
+    <div><div class='eyebrow'>Get In Touch</div><h2 class='sech'>Request a Quote<br>or Product Demo</h2><p class='secp'>We respond within 24 hours with a detailed quote tailored to your requirements.</p>
+      <div class='cinfolist'>
+        <div class='cinforow'><div class='cico'>&#128205;</div><div><div class='clbl'>Address</div><div class='cval'>Shahdara, New Delhi &ndash; 110032, India</div></div></div>
+        <div class='cinforow'><div class='cico'>&#128222;</div><div><div class='clbl'>Phone &amp; WhatsApp</div><div class='cval'>+91 98990 57451 &middot; 86% Response Rate</div></div></div>
+        <div class='cinforow'><div class='cico'>&#128100;</div><div><div class='clbl'>Director</div><div class='cval'>Mr. Sheoraj Singh Solanki &mdash; Proprietor</div></div></div>
+        <div class='cinforow'><div class='cico'>&#9989;</div><div><div class='clbl'>Verified Business</div><div class='cval'>TrustSEAL Verified &middot; GST Registered &middot; 18+ yrs</div></div></div>
+      </div>
+    </div>
+    <div class='cform'><div class='cformtitle'>Send Your Enquiry</div>
+      <div class='frow'><div class='fg'><label>Full Name</label><input type='text' placeholder='Your name'/></div><div class='fg'><label>Phone Number</label><input type='tel' placeholder='+91 XXXXX XXXXX'/></div></div>
+      <div class='fg'><label>Email Address</label><input type='email' placeholder='your@email.com'/></div>
+      <div class='fg'><label>Machine of Interest</label><select><option value=''>Select a machine&hellip;</option><option>Manual Hand Press &mdash; &#8377;12,000</option><option>Automatic Single Die &mdash; &#8377;25,000</option><option>Single Die Full Auto &mdash; &#8377;32,000</option><option>Single Die Heavy Duty &mdash; &#8377;35,000</option><option>Double Die Full Auto &mdash; &#8377;48,000</option><option>Double Die Heavy Duty &mdash; &#8377;55,000</option><option>Hydraulic Single Die All-in-One &mdash; &#8377;70,000</option><option>Hydraulic Double Die All-in-One &mdash; &#8377;85,000</option><option>Roll to Sheet Cutter &mdash; &#8377;1,00,000</option><option>Lamination Machine &mdash; &#8377;1,10,000</option><option>Hydraulic Four Die All-in-One &mdash; &#8377;1,20,000</option><option>Multiple / Custom Requirement</option></select></div>
+      <div class='fg'><label>Message</label><textarea placeholder='Tell us your production target, location, budget or specific requirement&hellip;'></textarea></div>
+      <button class='fsubmit'>Send Enquiry &mdash; We Respond in 24 hrs &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class='ftgrid'>
+    <div class='ftbrand'><div style='display:flex;align-items:center;gap:11px'><div class='nlogo' style='width:38px;height:38px;font-size:13px'>SVE</div><div class='nname'><strong style='color:#fff'>Shri Vaishno Enterprises</strong><span style='color:rgba(255,255,255,0.32)'>Est. 2006 &middot; New Delhi</span></div></div><p>Manufacturing, exporting and supplying industrial machines since 2006. Trusted by 500+ entrepreneurs across India.</p><div class='ftsoc'><a href='#' class='fts'>in</a><a href='#' class='fts'>f</a><a href='#' class='fts'>wa</a></div></div>
+    <div class='ftcol'><h5>Products</h5><ul><li><a href='#'>Paper Plate Machines</a></li><li><a href='#'>Hydraulic Machines</a></li><li><a href='#'>Sheet Cutting Machines</a></li><li><a href='#'>Lamination Machines</a></li><li><a href='#'>Candle Making Machine</a></li><li><a href='#'>Manual Hand Press</a></li></ul></div>
+    <div class='ftcol'><h5>Company</h5><ul><li><a href='#'>About Us</a></li><li><a href='#'>Our Process</a></li><li><a href='#'>Customer Reviews</a></li><li><a href='#'>Gallery</a></li><li><a href='#'>IndiaMART Profile</a></li></ul></div>
+    <div class='ftcol'><h5>Contact</h5><ul><li><a href='tel:+919899057451'>+91 98990 57451</a></li><li><a href='#'>WhatsApp Us</a></li><li><a href='#'>Shahdara, New Delhi</a></li><li><a href='#'>Get Directions</a></li></ul></div>
+  </div>
+  <div class='ftdiv'></div>
+  <div class='ftbot'><p class='ftcopy'>&copy; 2024 Shri Vaishno Enterprises. All rights reserved. New Delhi, India.</p><div class='ftbs'><span class='ftb'>Manufacturer</span><span class='ftb'>&middot;</span><span class='ftb'>Exporter</span><span class='ftb'>&middot;</span><span class='ftb'>Supplier</span></div></div>
+</footer>
+
+<script>
+var cw=document.getElementById('cw'),slides=cw.querySelectorAll('.slide'),dots=document.querySelectorAll('.cdot'),thumbs=document.querySelectorAll('.hth'),pbar=document.getElementById('hpbar');
+var cur=0,tot=slides.length,timer;
+function goTo(n){
+  slides[cur].classList.remove('on');dots[cur].classList.remove('on');
+  if(thumbs[cur])thumbs[cur].classList.remove('on');
+  cur=(n+tot)%tot;
+  slides[cur].classList.add('on');dots[cur].classList.add('on');
+  if(thumbs[cur])thumbs[cur].classList.add('on');
+  cw.style.transform='translateX(-'+(cur*100)+'%)';
+  pbar.style.transition='none';pbar.style.width='0%';
+  setTimeout(function(){pbar.style.transition='width 5s linear';pbar.style.width='100%';},30);
+}
+function start(){clearInterval(timer);timer=setInterval(function(){goTo(cur+1);},5000);}
+document.getElementById('cnxt').onclick=function(){goTo(cur+1);start();};
+document.getElementById('cprev').onclick=function(){goTo(cur-1);start();};
+dots.forEach(function(d){d.addEventListener('click',function(){goTo(+d.dataset.i);start();});});
+thumbs.forEach(function(t){t.addEventListener('click',function(){goTo(+t.dataset.i);start();});});
+goTo(0);start();
+window.addEventListener('scroll',function(){document.getElementById('topnav').classList.toggle('scrolled',scrollY>60);});
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+document.querySelectorAll('.tab').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    var cat=b.dataset.cat;
+    document.querySelectorAll('.pcard').forEach(function(c){
+      c.classList.toggle('hidden',cat!=='all'&&c.dataset.cat!==cat);
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'/>
+<title>Single Die Full Automatic Machine &ndash; &#8377;32,000 | Shri Vaishno Enterprises</title>
+<meta name='description' content='A compact, fully automatic single-die machine built for steady small-business production.'/>
+<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'/>
+<link rel='stylesheet' href='../css/style.css'/>
+</head>
+<body>
+
+<nav id='topnav'>
+  <a href='../index.html' class='nbrand'>
+    <div class='nlogo'>SVE</div>
+    <div class='nname'><strong>Shri Vaishno Enterprises</strong><span>Est. 2006 &middot; New Delhi</span></div>
+  </a>
+  <ul class='nlinks'>
+    <li><a href='../index.html#categories'>Products</a></li>
+    <li><a href='../index.html#about'>About Us</a></li>
+    <li><a href='../index.html#process'>Process</a></li>
+    <li><a href='../index.html#reviews'>Reviews</a></li>
+    <li><a href='../index.html#contact' class='ncta'>Get a Quote</a></li>
+  </ul>
+  <button id='nhbtn' class='nhbtn' aria-label='Open menu'><span></span><span></span><span></span></button>
+</nav>
+
+<div id='mnavOverlay' class='mnav-overlay'></div>
+<aside id='mnav' class='mnav'>
+  <div class='mnav-top'>
+    <div class='mnav-brand'></div>
+    <button id='mnavClose' class='mnav-close' aria-label='Close menu'>&times;</button>
+  </div>
+  <ul id='mnavLinks' class='mnav-links'></ul>
+  <div class='mnav-foot'>Est. 2006 &middot; New Delhi</div>
+</aside>
+<script>
+(function(){
+  var topnav=document.getElementById('topnav');
+  var hbtn=document.getElementById('nhbtn');
+  var overlay=document.getElementById('mnavOverlay');
+  var mnav=document.getElementById('mnav');
+  var closeBtn=document.getElementById('mnavClose');
+  var linksList=document.getElementById('mnavLinks');
+  var brandBox=mnav.querySelector('.mnav-brand');
+  var brandSrc=topnav.querySelector('.nbrand');
+  if(brandSrc){brandBox.innerHTML=brandSrc.innerHTML;}
+  var srcLinks=topnav.querySelectorAll('.nlinks > li');
+  for(var i=0;i<srcLinks.length;i++){
+    var a=srcLinks[i].querySelector('a');
+    var li=document.createElement('li');
+    var ac=document.createElement('a');
+    ac.href=a.getAttribute('href');
+    ac.textContent=a.textContent;
+    if(a.classList.contains('ncta')){ac.className='mnav-cta';}
+    li.appendChild(ac);
+    linksList.appendChild(li);
+  }
+  function openNav(){document.body.classList.add('mnav-open');}
+  function closeNav(){document.body.classList.remove('mnav-open');}
+  hbtn.addEventListener('click',openNav);
+  closeBtn.addEventListener('click',closeNav);
+  overlay.addEventListener('click',closeNav);
+  linksList.addEventListener('click',function(e){if(e.target.tagName==='A'){closeNav();}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeNav();}});
+})();
+</script>
+
+
+<div class='breadcrumb'>
+  <a href='../index.html'>Home</a><span>/</span>
+  <a href='../index.html#categories'>Paper Plate Machines</a><span>/</span>
+  <span class='current'>Single Die Full Automatic Machine</span>
+</div>
+
+<section class='pd-hero'>
+  <div class='pd-grid'>
+    <div class='pd-gallery'>
+      <div class='pd-mainimg'>
+        <div class='pd-mainimg-inner' style="background-image:url('../images/products/edited-photo\ \(1\).png')"></div>
+        <div class='pd-badge-row'></div>
+      </div>
+    </div>
+    <div class='pd-info'>
+      <div class='pd-cat'>Paper Plate Machine</div>
+      <h1 class='pd-title'>Single Die Full Automatic Machine</h1>
+      <div class='pd-rating-row'>
+        <div class='pd-stars'><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span style='opacity:0.3'>&#9733;</span></div>
+        <div class='pd-rating-text'><strong>4.3</strong> &middot; 29 reviews</div>
+      </div>
+      <p class='pd-desc'>A compact, fully automatic single-die machine built for steady small-business production.</p>
+      <div class='pd-price-box'>
+  <div>
+    <div class='pd-price-label'>Price</div>
+    <div class='pd-price-amt'>&#8377;32,000 <span>/ piece</span></div>
+  </div>
+  <div class='pd-moq'>Bulk pricing available<br>on quantity orders</div>
+</div>
+      <div class='pd-cta-row'>
+        <a href='../index.html#contact' class='btnink'>Enquire Now</a>
+        <a href='tel:+919899057451' class='btnout'>&#128222; Call for Quote</a>
+      </div>
+      <div class='pd-quickspecs'><div class='pd-qs-item'><div class='pd-qs-ico'>&#9881;</div><div class='pd-qs-val'>1,800 &ndash; 2,200 plates/hour</div><div class='pd-qs-lbl'>Output</div></div><div class='pd-qs-item'><div class='pd-qs-ico'>&#9889;</div><div class='pd-qs-val'>2 HP / 415V, 3-Phase</div><div class='pd-qs-lbl'>Power</div></div><div class='pd-qs-item'><div class='pd-qs-ico'>&#128202;</div><div class='pd-qs-val'>Single Die, Fully Automatic</div><div class='pd-qs-lbl'>Type</div></div></div>
+      <div class='pd-trustrow'>
+        <div class='pd-trust-item'><span>&#9989;</span> Quality Tested</div>
+        <div class='pd-trust-item'><span>&#128230;</span> Pan-India Delivery</div>
+        <div class='pd-trust-item'><span>&#128737;</span> 1 Year Warranty</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='pd-tabsec'>
+  <div class='pd-tabnav'>
+    <button class='pd-tabbtn on' data-tab='tab-overview'>Overview</button>
+    <button class='pd-tabbtn' data-tab='tab-specs'>Specifications</button>
+    <button class='pd-tabbtn' data-tab='tab-apps'>Applications</button>
+    <button class='pd-tabbtn' data-tab='tab-faq'>FAQs</button>
+  </div>
+
+  <div id='tab-overview' class='pd-tabpanel on'>
+    <div class='pd-overview'>
+      <div>
+        <p class='secp' style='max-width:100%;margin-bottom:8px'>This is one of our most commonly ordered machines for businesses taking their first step into automated production. Fully automatic operation removes the manual pressing step entirely, while the compact single-die design keeps the machine affordable and easy to fit into a small production space. It's reliable, straightforward to operate, and backed by the same quality testing we apply across our full range.</p>
+        <div class='pd-feat-list'><div class='pd-feat-row'><div class='pd-feat-ico'>&#9881;</div><div><h4>Fully Automatic Cycle</h4><p>No manual pressing required &mdash; the machine completes the full forming cycle automatically.</p></div></div><div class='pd-feat-row'><div class='pd-feat-ico'>&#128193;</div><div><h4>Compact & Space-Efficient</h4><p>Sized to fit comfortably into small workshops and home-based production setups.</p></div></div><div class='pd-feat-row'><div class='pd-feat-ico'>&#9889;</div><div><h4>Lower Power Requirement</h4><p>Runs on a 2 HP motor, keeping running costs lower than higher-capacity models.</p></div></div><div class='pd-feat-row'><div class='pd-feat-ico'>&#9989;</div><div><h4>Beginner-Friendly Operation</h4><p>Simple controls make this an accessible first machine for new manufacturing businesses.</p></div></div></div>
+      </div>
+      <div class='pd-sidebox'>
+        <h4>What's Included</h4>
+        <ul>
+          <li>Complete machine unit, factory tested</li>
+          <li>Installation guidance documentation</li>
+          <li>Operator training session</li>
+          <li>1 year manufacturing warranty</li>
+          <li>Direct access to spare parts support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id='tab-specs' class='pd-tabpanel'>
+    <div class='pd-spectable-wrap'><table class='pd-spectable'><tr><td>Machine Type</td><td>Single Die, Fully Automatic</td></tr><tr><td>Drive Mechanism</td><td>Belt Drive</td></tr><tr><td>Power Required</td><td>2 HP / 415V, 3-Phase</td></tr><tr><td>Production Capacity</td><td>1,800 &ndash; 2,200 plates/hour</td></tr><tr><td>Plate Size Range</td><td>6 inch to 10 inch (die dependent)</td></tr><tr><td>Frame Material</td><td>Mild Steel</td></tr><tr><td>Machine Weight</td><td>Approx. 280 kg</td></tr><tr><td>Dimensions (L&times;W&times;H)</td><td>4 ft &times; 3 ft &times; 5.5 ft</td></tr><tr><td>Warranty</td><td>1 Year on Manufacturing Defects</td></tr></table></div>
+  </div>
+
+  <div id='tab-apps' class='pd-tabpanel'>
+    <div class='pd-apps-grid'><div class='pd-app-card'><div class='pd-app-ico'>&#127968;</div><h4>Home-Based Production</h4><p>Compact size suits small home-based or workshop-scale manufacturing setups.</p></div><div class='pd-app-card'><div class='pd-app-ico'>&#127869;</div><h4>First-Time Manufacturers</h4><p>A practical entry point for entrepreneurs starting their first paper plate business.</p></div><div class='pd-app-card'><div class='pd-app-ico'>&#127981;</div><h4>Local Supply Chains</h4><p>Comfortably meets demand from nearby retailers, caterers, and small distributors.</p></div></div>
+  </div>
+
+  <div id='tab-faq' class='pd-tabpanel'>
+    <div style='max-width:760px'><div class='pd-faq-item open'>
+  <div class='pd-faq-q'><span>Is this suitable as a first machine for a new business?</span><span class='pd-faq-q-arrow'>+</span></div>
+  <div class='pd-faq-a'><div class='pd-faq-a-inner'>Yes, this is one of our most popular choices for first-time manufacturers due to its lower cost and straightforward operation.</div></div>
+</div><div class='pd-faq-item'>
+  <div class='pd-faq-q'><span>What kind of space does it need?</span><span class='pd-faq-q-arrow'>+</span></div>
+  <div class='pd-faq-a'><div class='pd-faq-a-inner'>A space of roughly 6&times;5 ft is generally sufficient for safe operation and material handling.</div></div>
+</div><div class='pd-faq-item'>
+  <div class='pd-faq-q'><span>How long does it take to learn to operate?</span><span class='pd-faq-q-arrow'>+</span></div>
+  <div class='pd-faq-a'><div class='pd-faq-a-inner'>Most operators are comfortable running the machine independently after about a day of guided training.</div></div>
+</div><div class='pd-faq-item'>
+  <div class='pd-faq-q'><span>Can production capacity be increased later?</span><span class='pd-faq-q-arrow'>+</span></div>
+  <div class='pd-faq-a'><div class='pd-faq-a-inner'>For higher capacity, we'd recommend upgrading to our double-die or hydraulic single-die models.</div></div>
+</div></div>
+  </div>
+</section>
+
+<section class='pd-related'>
+  <div class='eyebrow'>You May Also Like</div>
+  <h2 class='sech' style='margin-bottom:36px'>Related Machines</h2>
+  <div class='pgrid' style='grid-template-columns:repeat(3,1fr)'>
+    <a href='double-die-full-automatic-machine.html' style='text-decoration:none;color:inherit'>
+<div class="pcard"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('../images/products/double-die-full-automatic1.png')"></div></div><div class='pbadge'>Popular</div></div><div class="pbody"><div class="pcat">Paper Plate Machine</div><div class="pname">Double Die Full Automatic Machine</div><div class="pfoot"><div><span class='pprice'>&#8377;48,000</span><span class='punit'> /pc</span></div><span class="pbtn">View &rarr;</span></div></div></div>
+</a><a href='double-die-heavy-duty-automatic-machine.html' style='text-decoration:none;color:inherit'>
+<div class="pcard"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('../images/products/double-die-full-automatic-heavy-duty.png')"></div></div><div class='pbadge'>Heavy Duty</div></div><div class="pbody"><div class="pcat">Paper Plate Machine</div><div class="pname">Double Die Heavy Duty Automatic</div><div class="pfoot"><div><span class='pprice'>&#8377;55,000</span><span class='punit'> /pc</span></div><span class="pbtn">View &rarr;</span></div></div></div>
+</a><a href='hydraulic-double-die-all-in-one-machine.html' style='text-decoration:none;color:inherit'>
+<div class="pcard"><div class="pimgbox"><div class="pframe"><div class="pimg" style="background-image:url('../images/products/hydraulic-double-die-full-automatic-machine.png')"></div></div><div class='pbadge'>Bestseller</div></div><div class="pbody"><div class="pcat">Hydraulic Machine</div><div class="pname">Hydraulic Double Die All-in-One</div><div class="pfoot"><div><span class='pprice'>&#8377;85,000</span><span class='punit'> /pc</span></div><span class="pbtn">View &rarr;</span></div></div></div>
+</a>
+  </div>
+</section>
+
+<footer>
+  <div class='ftgrid'>
+    <div class='ftbrand'><div style='display:flex;align-items:center;gap:11px'><div class='nlogo' style='width:38px;height:38px;font-size:13px'>SVE</div><div class='nname'><strong style='color:#fff'>Shri Vaishno Enterprises</strong><span style='color:rgba(255,255,255,0.32)'>Est. 2006 &middot; New Delhi</span></div></div><p>Manufacturing, exporting and supplying industrial machines since 2006. Trusted by 500+ entrepreneurs across India.</p><div class='ftsoc'><a href='#' class='fts'>in</a><a href='#' class='fts'>f</a><a href='#' class='fts'>wa</a></div></div>
+    <div class='ftcol'><h5>Products</h5><ul><li><a href='../index.html#categories'>Paper Plate Machines</a></li><li><a href='../index.html#categories'>Hydraulic Machines</a></li><li><a href='../index.html#categories'>Sheet Cutting Machines</a></li><li><a href='../index.html#categories'>Lamination Machines</a></li><li><a href='../index.html#categories'>Manual Hand Press</a></li></ul></div>
+    <div class='ftcol'><h5>Company</h5><ul><li><a href='../index.html#about'>About Us</a></li><li><a href='../index.html#process'>Our Process</a></li><li><a href='../index.html#reviews'>Customer Reviews</a></li><li><a href='../index.html#contact'>Contact Us</a></li></ul></div>
+    <div class='ftcol'><h5>Contact</h5><ul><li><a href='tel:+919899057451'>+91 98990 57451</a></li><li><a href='#'>WhatsApp Us</a></li><li><a href='#'>Shahdara, New Delhi</a></li></ul></div>
+  </div>
+  <div class='ftdiv'></div>
+  <div class='ftbot'><p class='ftcopy'>&copy; 2024 Shri Vaishno Enterprises. All rights reserved. New Delhi, India.</p><div class='ftbs'><span class='ftb'>Manufacturer</span><span class='ftb'>&middot;</span><span class='ftb'>Exporter</span><span class='ftb'>&middot;</span><span class='ftb'>Supplier</span></div></div>
+</footer>
+
+<script>
+window.addEventListener('scroll',function(){document.getElementById('topnav').classList.toggle('scrolled',scrollY>60);});
+document.querySelectorAll('.pd-tabbtn').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.pd-tabbtn').forEach(function(x){x.classList.remove('on');});
+    document.querySelectorAll('.pd-tabpanel').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    document.getElementById(b.dataset.tab).classList.add('on');
+  });
+});
+document.querySelectorAll('.pd-faq-q').forEach(function(q){
+  q.addEventListener('click',function(){
+    var item=q.parentElement;
+    var wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.pd-faq-item').forEach(function(i){i.classList.remove('open');});
+    if(!wasOpen)item.classList.add('open');
+  });
+});
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+</body>
+</html>
