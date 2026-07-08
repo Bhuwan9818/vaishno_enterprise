@@ -141,7 +141,7 @@ body.mnav-open .mnav-links li:nth-child(5){transition-delay:0.28s}
 .rt:nth-child(4){grid-column:1/5;grid-row:2}
 .rt:nth-child(5){grid-column:5/9;grid-row:2}
 .rt:nth-child(6){grid-column:9/13;grid-row:2}
-.rtimg{position:absolute;inset:0;background-size:contain; background-repeat: no-repeat;  background-position:center;transition:transform 0.7s ease}
+.rtimg{position:absolute;inset:0;background-size:cover; background-repeat: no-repeat;  background-position:center;transition:transform 0.7s ease}
 .rt:hover .rtimg{transform:scale(1.07)}
 .rtvl{position:absolute;inset:0;background:linear-gradient(0deg,rgba(26,18,6,0.9) 0%,rgba(26,18,6,0.2) 55%,rgba(26,18,6,0.04) 100%);transition:background 0.35s}
 .rt:hover .rtvl{background:linear-gradient(0deg,rgba(26,18,6,0.94) 0%,rgba(26,18,6,0.42) 55%,rgba(26,18,6,0.08) 100%)}
@@ -192,7 +192,7 @@ body.mnav-open .mnav-links li:nth-child(5){transition-delay:0.28s}
 }
 .pcard:hover::before{transform:scaleX(1)}
 
-/* Image stage — generous, square-ish, gallery feel */
+/* Image stage — clean square stage, uniform across every product */
 .pimgbox{
   position:relative;
   background:linear-gradient(180deg,var(--cream) 0%,var(--cream2) 100%);
@@ -201,15 +201,17 @@ body.mnav-open .mnav-links li:nth-child(5){transition-delay:0.28s}
 }
 .pframe{
   position:relative;
-  padding-bottom:115%; /* matches portrait machine images for tighter framing */
+  padding-bottom:100%; /* perfect square — matches the normalized product cutouts */
   background:transparent;
 }
 .pimg{
-  position:absolute;inset:0;
+  position:absolute;
+  inset:14%; /* breathing room so machines never touch the frame edge */
   background-size:contain;
   background-repeat:no-repeat;
   background-position:center center;
   transition:transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+  z-index:1;
 }
 .pcard:hover .pimg{transform:scale(1.06)}
 
@@ -217,10 +219,23 @@ body.mnav-open .mnav-links li:nth-child(5){transition-delay:0.28s}
 .pimgbox::after{
   content:'';position:absolute;
   width:65%;height:65%;border-radius:50%;
-  background:radial-gradient(circle,rgba(212,160,23,0.08) 0%,transparent 70%);
-  top:50%;left:50%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(212,160,23,0.1) 0%,transparent 70%);
+  top:47%;left:50%;transform:translate(-50%,-50%);
   pointer-events:none;z-index:0;
 }
+
+/* ground platform — grounds the machine with a soft contact shadow */
+.pimgbox .pplatform{
+  position:absolute;
+  left:50%;bottom:9%;
+  width:58%;height:9%;
+  transform:translateX(-50%);
+  background:radial-gradient(ellipse,rgba(26,18,6,0.16) 0%,rgba(26,18,6,0) 72%);
+  z-index:0;
+  border-radius:50%;
+  transition:width 0.5s ease,opacity 0.5s ease;
+}
+.pcard:hover .pplatform{width:64%;opacity:0.85}
 
 /* Badge — top-left ribbon style */
 .pbadge{
