@@ -437,6 +437,7 @@ footer{background:var(--ink);padding:60px 80px 26px}
   .frow{grid-template-columns:1fr}
   .feats{grid-template-columns:1fr}
   .ftgrid{grid-template-columns:1fr}
+  .procsteps{grid-template-columns:1fr}
 }
 
 /* ═══════════════════ PRODUCT DETAIL PAGE ═══════════════════ */
@@ -583,4 +584,6 @@ footer{background:var(--ink);padding:60px 80px 26px}
 @media(max-width:600px){
   .pd-quickspecs{grid-template-columns:1fr}
   .pd-price-box{flex-direction:column;align-items:flex-start}
+  .ftbot{flex-direction:column;align-items:flex-start;gap:12px
+  }
 }
