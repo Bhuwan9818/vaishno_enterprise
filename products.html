@@ -119,7 +119,10 @@ document.querySelectorAll('.tab').forEach(function(b){
     b.classList.add('on');
     var cat=b.dataset.cat;
     document.querySelectorAll('.pcard').forEach(function(c){
-      c.classList.toggle('hidden',cat!=='all'&&c.dataset.cat!==cat);
+      var show=cat==='all'||c.dataset.cat===cat;
+      c.classList.toggle('hidden',!show);
+      var wrap=c.closest('a');
+      if(wrap){wrap.style.display=show?'':'none';}
     });
   });
 });
